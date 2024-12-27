@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<style>
+ 
+.background {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    height: 120%;
+    width: 120%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-filter: blur(30px);
+    filter: blur(30px);
+}
+
+.card {
+    position: absolute;
+    border-radius: 8px;
+    height: 450px;
+    width: 400px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 80px -10px black;
+    overflow: hidden;
+}
+
+.card-blur {
+    position: absolute;
+    height: 100%;
+    width: calc(100% + 1px);
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.15s ease-in;
+}
+
+.card:hover .card-blur {
+    opacity: 0.6;
+}
+
+.footer {
+    z-index: 1;
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+}
+
+svg#curve {
+    position: absolute;
+    fill: white;
+    left: 0;
+    bottom: 0;
+    width: 400px;
+    height: 450px;
+}
+.info {
+	font-family: Inconsolata;
+    padding-left: 20px;
+    transform: translateY(250px);
+    
+    transition: transform 1s cubic-bezier(.31,1.21,.64,1.02);
+}
+
+.card:hover .info {
+    transform: translateY(0px);
+}
+
+.name {
+    font-weight: bolder;
+    padding-top: 5px;
+}
+
+.job {
+    margin-top: 10px;
+}
+
+.card {
+  background-image: url(./assets/images/9.jpg);
+}
+
+
+</style>
+<div class="background"></div>
+<div id="curve" class="card">
+    <div class="footer">
+        <svg id="curve">
+            <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+            <rect id="dummyRect" x="0" y="0" height="450" width="400"
+		  fill="transparent" />
+            <!-- slide up-->
+            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+            <!-- slide up and curve in -->
+            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+            <!-- slide down and curve in -->
+            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+            <!-- slide down and curve out -->
+            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+            <!-- curve in -->
+            <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+
+            <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+        </svg>
+        <div class="info">
+            <div class="name">Filan Fisteku</div>
+            <div class="job">Architect Manager</div>
+        </div>
+    </div>
+    <div class="card-blur"></div>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<section class="slideshow-container" id="Yach">
+    <h2 class="h2 section-title" id="cen">Yacht Services</h2>
+    <p class="section-text">Special offer for yacht transit Suez canal
+
+      DIRECT TRANSIT
+      TRANSIT WITHSTOPPING AT MARINA ISMAILIA & MARINA PORT SAID
+      Also Provide Special Services For Yachts:
+      
+      Bunkering
+      Fresh water
+      Supply boats
+      Provision & Bones Stores</p>
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 7</div>
+      <img src="assets/images/up1.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 7</div>
+      <img src="assets/images/up2.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 7</div>
+      <img src="assets/images/up4.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 7</div>
+      <img src="assets/images/up5.jpeg" class="p1" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 7</div>
+      <img src="assets/images/up6.jpeg" class="p1" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 7</div>
+      <img src="assets/images/up3.jpeg" style="width:100%">
+    </div>
+
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(+1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+  </section>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ALRADWAN SHIPPING AGENCY</title>
+      
+        <!-- 
+          - favicon
+        -->
+        <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+      
+        <!-- 
+          - custom css link
+        -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="style.css">
+      
+        <!--
+          - google font link
+        -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+      
+        <!-- 
+          - preload images
+        -->
+      </head>
+<body>
+    
+  <header class="header" data-header>
+    <div class="container">
+        <div class="radLogo">
+            <img src="assets/images/logo.png" alt="">
+            <h1>
+              </h1>
+        </div>
+
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">Alradwan</a>
+
+          <button class="nav-close-btn" aria-label="Clsoe menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+  
+      </nav>
+
+      <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <!-- Video Background -->
+        <video autoplay muted loop class="hero-video">
+          <!-- Replace 'your-video.mp4' with your actual video file -->
+          <source src="Happy New Year, celebration new year, animated video @jiaaz14.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+  
+        <!-- Centered Button -->
+        <div class="hero-content">
+          <h2>Alradwan wishes you a year filled with happiness and success </h2>
+          <p>Happy New Year!</p>
+          <a href="1.htm" class="btn">Go Home Page</a>
+        </div>
+      </section>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          setTimeout(function () {
+            var heroContent = document.querySelector(".hero-content");
+            heroContent.classList.add("hide-text");
+          }, 20000); // 20 seconds in milliseconds
+        });
+      </script>
+      <audio  controls autoplay style="display: none;">
+        <source src="videoplayback-_1_.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+      </audio>
+</body>
+</html>

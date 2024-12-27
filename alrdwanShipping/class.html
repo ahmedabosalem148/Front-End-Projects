@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ALRADWAN SHIPPING AGENCY</title>
+      
+        <!-- 
+          - favicon
+        -->
+        <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+      
+        <!-- 
+          - custom css link
+        -->
+        <!-- <link rel="stylesheet" href="css/style.css"> -->
+        <link rel="stylesheet" href="style.css">
+        <style>
+            header{
+                background-color: #00337C;
+            }
+        </style>
+      
+        <!--
+          - google font link
+        -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+      
+        <!-- 
+          - preload images
+        -->
+      </head>
+      
+      
+        <!-- 
+          - #HEADER
+        -->
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            .about {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh; /* Adjust the height as needed */
+                text-align: center;
+            }
+    
+            .container {
+                width: 100%;
+                padding: 0 20px;
+            }
+    
+            .section-subtitle {
+                font-size: 1.5em;
+                margin-bottom: 20px;
+            }
+    
+            .about-banner {
+                margin-top: 20px;
+            }
+    
+            .img-cover {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+    
+            @media screen and (max-width: 768px) {
+                .about {
+                    height: auto;
+                }
+            }
+        </style>
+        <header class="header" data-header>
+          <div class="container">
+            <div class="navlog">
+              <img src="assets/images/logo.png" alt="">
+              <h1>
+              <a href="#" class="logo">Alradwan</a>
+            </h1>
+          </div>
+      
+        
+            <nav class="navbar" data-navbar>
+        
+              <div class="navbar-top">
+      
+        
+                <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+              </div>
+        
+              <ul class="navbar-list">
+        
+                <li class="navbar-item">
+                  <a href="#home" class="navbar-link" data-nav-link>
+                    <span>Home</span>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                  </a>
+                </li>
+        
+                <li class="navbar-item">
+                  <a href="#About" class="navbar-link" data-nav-link>
+                    <span>About</span>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                  </a>
+                </li>
+        
+                <li class="navbar-item dropdown">
+                  <a href="#" class="navbar-link" data-nav-link>
+                    <span>Main Activities</span>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                  </a>
+                  <ul class="dropdown-content">
+                    <li><a href="#Quality">Quality</a></li>
+                    <li><a href="#Port">Port Services</a></li>
+                    <li><a href="#Certificate">Certificates</a></li>
+                    <li><a href="#SLUDGE">SLUDGE</a></li>
+                    <li><a href="#Yach">Yacht Services</a></li>
+                    <li><a href="#FLOATING">FLOATING & DRY DOCK SERVICES</a></li>
+                    <li><a href="#SuezCanal">Suez Canal</a></li>
+                    <li><a href="#Information">Information</a></li>
+                  </ul>
+                </li>
+        
+                <li class="navbar-item">
+                  <a href="#CONTACT" class="navbar-link" data-nav-link>
+                    <span>Contact</span>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                  </a>
+                </li>
+        
+                <li class="navbar-item">
+                  <a href="#Sca" class="navbar-link" data-nav-link>
+                    <span>Sca</span>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+        
+            <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+        
+            <div class="overlay" data-nav-toggler data-overlay></div>
+        
+          </div>
+        </header>
+     
+
+</head>
+
+<body>
+
+    <section class="section about HUSBANDRY" id="about" aria-label="about">
+        <div class="about">
+            <div class="container">
+                <div>
+                    <p class="section-subtitle">Classification approved by Suez Canal</p>
+                    <figure class="about-banner cert img-holder" style="--width: 400; --height: 720;">
+                        <img src="./assets/images/4-11-2013-2.jpg" width="700" height="1000" loading="lazy" alt=""
+                            class="img-cover" id="cert">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+          <script src="app.js"></script>
+</body>
+</html>
